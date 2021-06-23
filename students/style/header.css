@@ -1,0 +1,206 @@
+:root {
+    --normal: #3f3a3a;
+    --sepia: #8b572a;
+}
+
+header nav {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 40px solid #313538;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 6;
+    top: 0;
+}
+
+header nav #search {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+header nav #logo img {
+    height: 48px;
+}
+
+header nav .nav-left {
+    display: flex;
+    margin-left: 36px;
+}
+
+header nav .nav-left .clothes-types {
+    margin-left: 16px;
+    display: flex;
+    margin-top: 20px;
+}
+
+header nav .nav-left .clothes-types .clothes-type {
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--normal);
+    align-self: center;
+}
+
+header nav .nav-left .clothes-types .clothes-type + .clothes-type {
+    border-left: 2px solid var(--normal);
+}
+
+header nav .nav-left .clothes-types .clothes-type:hover {
+    color: var(--sepia);
+}
+
+header nav .nav-left .clothes-types .clothes-type:active {
+    color: var(--sepia);
+}
+
+header nav .nav-left .clothes-types .clothes-type.clothes-type--active {
+    color: var(--sepia);
+}
+
+header nav .nav-right {
+    display: flex;
+    margin-right: 36px;
+}
+
+header nav .nav-right input {
+    border-radius: 20px;
+    width: 214px;
+    height: 40px;
+    border-width: 1px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 20px;
+}
+
+header nav .nav-right #cart {
+    width: 44px;
+    height: 44px;
+    margin-left: 36px;
+    position: relative;
+}
+
+header nav .nav-right #cart .cart-num {
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    height: 18px;
+    width: 18px;
+    background: var(--sepia);
+    border-radius: 50%;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+header nav .nav-right #member {
+    width: 44px;
+    height: 44px;
+    margin-left: 36px;
+}
+
+#sm-form {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        padding: 0;
+        height: 52px;
+        border: none;
+    }
+
+    header nav .nav-right {
+        display: none;
+    }
+
+    header nav .nav-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    header nav .nav-left .clothes-types {
+        display: none;
+    }
+
+    header nav .nav-left #logo img {
+        width: 129px;
+        height: 24px;
+    }
+
+    header .sm-clothes-types {
+        position: fixed;
+        display: flex;
+        z-index: 6;
+        top: 52px;
+        height: 40px;
+        width: 100%;
+        background-color: #313538;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .sm-clothes-types .sm-clothes-type {
+        letter-spacing: 24px;
+        text-indent: 24px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        color: #828282;
+    }
+
+    header .sm-clothes-types .sm-clothes-type + .sm-clothes-type {
+        border-left: 2px solid #828282;
+    }
+
+    header .sm-clothes-types .sm-clothes-type:hover {
+        color: #fff;
+    }
+
+    header .sm-clothes-types .sm-clothes-type.sm-clothes-type--active {
+        color: #fff;
+    }
+
+    #sm-form {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #sm-form #search-bar {
+        width: 40px;
+        height: 40px;
+        /* padding: 8px 48px 8px 20px; */
+        border: none;
+        /* border-radius: 20px; */
+        outline: none;
+        font-size: 20px;
+        background-image: url('../images/search.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin-left: auto;
+        padding-left: 20px;
+    }
+
+    #sm-form #search-bar:focus {
+        border: solid 1px #979797;
+        width: calc(100% - 20px);
+        border-radius: 20px;
+    }
+}

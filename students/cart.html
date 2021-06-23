@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a place for you to have an amazing look!">
+    <title>STYLiSH 2021</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/bottomInfo.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK3BRD60NV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NK3BRD60NV');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+                    <div class="clothes-types">
+                        <a href="./index.html?tag=women" class="clothes-type" id="women">女裝</a>
+                        <a href="./index.html?tag=men" class="clothes-type" id="men">男裝</a>
+                        <a href="./index.html?tag=accessories" class="clothes-type" id="accessories">配件</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <form action="./" method="GET">
+                        <input type="text" id="search-bar" name="tag">
+                    </form>
+                    <a href="./cart.html" id="cart"><img src="images/cart.png" alt="cart"><div class='cart-num'>0</div></a>
+                    <a href="#" id="member" class="member"><img src="images/member.png" alt="member"></a>
+                </div>
+                <form action="./index.html" method="GET" id="sm-form">
+                    <input type="text" id="search-bar" name="tag">
+                </form>
+            </nav>
+            <div class="sm-clothes-types">
+                <a href="./index.html?tag=women" class="sm-clothes-type" id="sm-women">女裝</a>
+                <a href="./index.html?tag=men" class="sm-clothes-type" id="sm-men">男裝</a>
+                <a href="./index.html?tag=accessories" class="sm-clothes-type" id="sm-accessories">配件</a>
+            </div>
+        </div>
+    </header>
+    <div class="sm-cart-member">
+        <a href="./cart.html" id="sm-cart"><div class="cart-detail"><img src="images/cart-mobile.png" alt="cart">購物車<div class="cart-num">0</div></div></a>
+        <a href="#" id="sm-member" class="member"><img src="images/member-mobile.png" alt="member">會員</a>
+    </div>
+    <main class="cart__container">
+        <div class="cart__header">
+            <div class="cart__header__title">購物車(<span>3</span>)</div>
+            <div class="cart__header__qty">數量</div>
+            <div class="cart__header__price">單價</div>
+            <div class="cart__header__total">小計</div>
+            <div class="cart__header__remove"></div>
+        </div>
+        <div class="cart__lists">
+        </div>
+        <div class="shipment">
+            <div class="shipment__name">配送國家</div>
+            <select class="shipment__select">
+                <option>台灣及離島</option>
+            </select>
+            <div class="shipment__name shipment__payment">付款方式</div>
+            <select class="shipment__select shipment__select__pay">
+                <option value="60" data-pay="credit_card">信用卡支付</option>
+                <option value="80">超商取貨付現</option>
+            </select>
+        </div>
+        <div class="warning">
+            ※ 提醒您：<br/>
+            ● 選擇宅配-請填寫正確收件人資訊，避免包裹配送不達 <br/>
+            ● 選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取
+        </div>
+        <div class="order__header">訂購資料</div>
+        <form>
+            <div class="field">
+                <label for="name">收件人姓名</label>
+                <div class="field__input">
+                    <input type="text" id="name">
+                </div>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <div class="field__input">
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="field">
+                <label for="phone">手機號碼</label>
+                <div class="field__input">
+                    <input type="text" id="phone">
+                </div>
+            </div>
+            <div class="field">
+                <label for="address">收件地址</label>
+                <div class="field__input">
+                    <input type="text" id="address">
+                </div>
+            </div>
+            <div class="field">
+                <label for="time">配送時間</label>
+                <div class="field__input__radios">
+                    <input type="radio" id="morning" name="time" class="time" checked>
+                    <label for="morning">8:00-12:00</label>
+                    <input type="radio" id="afternoon" name="time" class="time">
+                    <label for="afternoon">14:00-18:00</label>
+                    <input type="radio" id="anytime" name="time" class="time">
+                    <label for="anytime" class="free-label">不指定</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="order__header">付款資料</div>
+        <form> 
+            <div class="field">
+                <label for="card-num">信用卡號碼</label>
+                <div class="field__input">
+                    <div class="tpfield" id="card-number"></div>
+                </div>
+            </div>
+            <div class="field">
+                <label for="card-duration">有效期限</label>
+                <div class="field__input">
+                    <div class="tpfield" id="card-expiration-date"></div>
+                </div>
+            </div>
+            <div class="field last__field">
+                <label for="card-cvc">安全碼</label>
+                <div class="field__input">
+                    <div class="tpfield" id="card-ccv"></div>
+                </div>
+            </div>
+        </form>
+        <div class="summary">
+            <div class="summary__container">
+               <div class="subtotal">
+                   <div class="summary__name">總金額</div>
+                   <div class="summary__fee">NT. <span>1598</span></div>
+               </div> 
+               <div class="transport">
+                   <div class="summary__name">運費</div>
+                   <div class="summary__fee">NT. <span>60</span></div>
+               </div>
+               <div class="total">
+                   <div class="summary__name">應付金額</div>
+                   <div class="summary__fee">NT. <span>1658</span></div>
+               </div>
+               <div class="payBtn">確認付款</div>
+            </div>
+        </div>
+    </main>
+    <footer class="cart__footer">
+        <div class="footer-context">
+            <div class="details">
+                <a href="#" id="about">關於 Stylish</a>
+                <a href="#" id="service">服務條款</a>
+                <a href="#" id="privacy">隱私政策</a>
+                <a href="#" id="contact">聯絡我們</a>
+                <a href="#" id="faq">FAQ</a>
+            </div>
+            <div class="social">
+                <a href="#" id="line"><img src="images/line.png" alt="line"></a>
+                <a href="#" id="twitter"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#" id="facebook"><img src="images/facebook.png" alt="facebook"></a>
+            </div>
+            <p class="right">&copy; 2021.All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/FB.js"></script>
+    <script src="./JS/auth.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.5.1"></script>
+    <script src="./JS/checkout.js"></script>
+</body>
+</html>

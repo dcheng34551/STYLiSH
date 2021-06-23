@@ -1,0 +1,26 @@
+{
+  "name": "front_end_class_batch13",
+  "version": "1.0.0",
+  "description": "- HTML\r - CSS\r - JavaScript(ES6+)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dcheng34551:625killer345551@github.com/dcheng34551/Front-End-Class-Batch13.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcheng34551/Front-End-Class-Batch13/issues"
+  },
+  "homepage": "https://github.com/dcheng34551/Front-End-Class-Batch13#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

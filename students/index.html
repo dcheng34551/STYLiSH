@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a place for you to have an amazing look!">
+    <title>STYLiSH 2021</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/bottomInfo.css">
+    <link rel="stylesheet" href="./style/hero.css">
+    <link rel="stylesheet" href="./style/productList.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK3BRD60NV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NK3BRD60NV');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+                    <div class="clothes-types">
+                        <a href="?tag=women" class="clothes-type clothes-type--active" id="women">女裝</a>
+                        <a href="?tag=men" class="clothes-type" id="men">男裝</a>
+                        <a href="?tag=accessories" class="clothes-type" id="accessories">配件</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <form action="./" method="GET">
+                        <input type="text" id="search-bar" name="tag">
+                    </form>
+                    <a href="./cart.html" id="cart"><img src="images/cart.png" alt="cart"><div class='cart-num'>0</div></a>
+                    <a href="#" id="member" class="member"><img src="images/member.png" alt="member"></a>
+                </div>
+                <form action="./index.html" method="GET" id="sm-form">
+                    <input type="text" id="search-bar" name="tag">
+                </form>
+            </nav>
+            <div class="sm-clothes-types">
+                <a href="?tag=women" class="sm-clothes-type sm-clothes-type--active" id="sm-women">女裝</a>
+                <a href="?tag=men" class="sm-clothes-type" id="sm-men">男裝</a>
+                <a href="?tag=accessories" class="sm-clothes-type" id="sm-accessories">配件</a>
+            </div>
+        </div>
+    </header>
+    <div class="sm-cart-member">
+        <a href="./cart.html" id="sm-cart"><div class="cart-detail"><img src="images/cart-mobile.png" alt="cart">購物車<div class="cart-num">1</div></div></a>
+        <a href="#" id="sm-member" class="member"><img src="images/member-mobile.png" alt="member">會員</a>
+    </div>
+    <div class="heros">
+        <div class="hero-dots">
+            <!-- <div class="hero-dot hero-dot--active"></div>
+            <div class="hero-dot"></div>
+            <div class="hero-dot"></div> -->
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="products-list">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-context">
+            <div class="details">
+                <a href="#" id="about">關於 Stylish</a>
+                <a href="#" id="service">服務條款</a>
+                <a href="#" id="privacy">隱私政策</a>
+                <a href="#" id="contact">聯絡我們</a>
+                <a href="#" id="faq">FAQ</a>
+            </div>
+            <div class="social">
+                <a href="#" id="line"><img src="images/line.png" alt="line"></a>
+                <a href="#" id="twitter"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#" id="facebook"><img src="images/facebook.png" alt="facebook"></a>
+            </div>
+            <p class="right">&copy; 2021.All rights reserved.</p>
+        </div>
+    </footer>
+    <template id="tryThis">
+        <a href="#" class="hero">
+            <pre class="hero-text">
+            </pre>
+        </a>
+    </template>
+    <template id="dots-num">
+        <div class="hero-dot"></div>
+    </template>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/FB.js"></script>
+    <script src="./JS/auth.js"></script>
+</body>
+</html>

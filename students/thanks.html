@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a place for you to have an amazing look!">
+    <title>STYLiSH 2021</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/bottomInfo.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/thanks.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK3BRD60NV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NK3BRD60NV');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+                    <div class="clothes-types">
+                        <a href="./index.html?tag=women" class="clothes-type" id="women">女裝</a>
+                        <a href="./index.html?tag=men" class="clothes-type" id="men">男裝</a>
+                        <a href="./index.html?tag=accessories" class="clothes-type" id="accessories">配件</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <form action="./" method="GET">
+                        <input type="text" id="search-bar" name="tag">
+                    </form>
+                    <a href="./cart.html" id="cart"><img src="images/cart.png" alt="cart"><div class='cart-num'>0</div></a>
+                    <a href="#" id="member" class="member"><img src="images/member.png" alt="member"></a>
+                </div>
+                <form action="./index.html" method="GET" id="sm-form">
+                    <input type="text" id="search-bar" name="tag">
+                </form>
+            </nav>
+            <div class="sm-clothes-types">
+                <a href="./index.html?tag=women" class="sm-clothes-type" id="sm-women">女裝</a>
+                <a href="./index.html?tag=men" class="sm-clothes-type" id="sm-men">男裝</a>
+                <a href="./index.html?tag=accessories" class="sm-clothes-type" id="sm-accessories">配件</a>
+            </div>
+        </div>
+    </header>
+    <div class="sm-cart-member">
+        <a href="./cart.html" id="sm-cart"><div class="cart-detail"><img src="images/cart-mobile.png" alt="cart">購物車<div class="cart-num">0</div></div></a>
+        <a href="#" id="sm-member" class="member"><img src="images/member-mobile.png" alt="member">會員</a>
+    </div>
+    <div class="thank__container">
+        <div class="thank__title">感謝您的購買，我們會盡快將商品送達</div>
+        <div class="thank__warning">請記住以下訂單編號，以便查詢</div>
+        <div class="thank__order">312338147653</div>
+        <a class="thank__continue"href="./index.html">繼續購物</a>
+    </div>
+    <footer class="cart__footer">
+        <div class="footer-context">
+            <div class="details">
+                <a href="#" id="about">關於 Stylish</a>
+                <a href="#" id="service">服務條款</a>
+                <a href="#" id="privacy">隱私政策</a>
+                <a href="#" id="contact">聯絡我們</a>
+                <a href="#" id="faq">FAQ</a>
+            </div>
+            <div class="social">
+                <a href="#" id="line"><img src="images/line.png" alt="line"></a>
+                <a href="#" id="twitter"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#" id="facebook"><img src="images/facebook.png" alt="facebook"></a>
+            </div>
+            <p class="right">&copy; 2021.All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./JS/thanks.js"></script>
+</body>
+</html>

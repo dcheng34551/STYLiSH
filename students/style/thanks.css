@@ -1,0 +1,54 @@
+/* <div class="thank__container">
+<div class="thank__title">感謝您的購買，我們會盡快將商品送達</div>
+<div class="thank__warning">請記住以下訂單編號，以便查詢</div>
+<div class="thank__order">312338147653</div>
+<a href="./index.html">繼續購物</a>
+</div> */
+
+/* .thank__container {
+
+} */
+.thank__container {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.thank__title {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3f3a3a;
+    width: calc(100%-40px);
+    margin: 0 20px;
+}
+
+.thank__warning {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.thank__order {
+    text-align: center;
+    margin-top: 16px;
+    color: #3f3a3a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.thank__continue {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    color: #3f3a3a;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .thank__container {
+        margin-top: 160px;
+    }
+}
