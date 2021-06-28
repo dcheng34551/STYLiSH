@@ -1,65 +1,40 @@
-# Front-End Class Batch #13
+# [STYLiSH](https://dcheng34551.github.io/STYLiSH/students/)
 
-## Outline
+This is a e-commerce website for clothes shopping.
 
-### Frontend Fundamental
+## Technologies
 
-- HTML
-- CSS
-- JavaScript(ES6+)
+- Front-End Basic
+  - HTML / CSS / JavaScript(ES6+)
+  - RWD
+- React Libraries
+  - React(Context, Hooks)
+  - React Router
+  - Styled Component
+- Third-Party Libraries
+  - Facebook SDK
+  - Tappay SDK
+- Cloud Service
+  - Firebase
+- Networking
+  - HTTP/HTTPS
+  - JSON
+  - RESTful APIs
+  - AJAX(Fetch, Axios)
+- Persistent Store
+  - Web Storage
+  - Cookie
+- Tools for Development
+  - ESLint
+  - Prettier
+- Tools for Business
+  - Google Analytics
 
-### User Interface
+## Features
 
-- Responsive Web Design(RWD)
-- Flex and Grid Layout
-
-### React Libraries
-
-- React(Context, Hooks)
-- React Router
-- Redux
-- Styled Component
-
-### Third-Party Libraries
-
-- Facebook SDK
-- Tappay SDK
-
-### Backend Framework and Cloud Service
-
-- Node and Express
-- Firebase
-
-### Networking
-
-- HTTP/HTTPS
-- JSON
-- RESTful APIs
-- AJAX(Fetch, Axios)
-
-### Persistent Store
-
-- Web Storage
-- Cookie
-
-### Programming Paradigms
-
-- Object-Oriented Programming(OOP)
-- Functional Programming
-
-### Design Patterns
-
-- Module Pattern
-- Model-View-Controller(MVC) Pattern
-
-### Tools for Development
-
-- Webpack
-- ESLint
-- Prettier
-- Git, GitHub
-
-### Tools for Business
-
-- Google Analytics
-- Google PageSpeed Insights
+- Infinite Scroll for Products
+- Search Feature
+- Campaign Carousel
+- Add Products to Shopping Cart
+- Facebook Login
+- Payment System
